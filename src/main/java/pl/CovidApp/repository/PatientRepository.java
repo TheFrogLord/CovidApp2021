@@ -1,4 +1,4 @@
-package pl.sda.covidvavapp.repository;
+package pl.CovidApp.repository;
 
 import org.springframework.stereotype.Repository;
 
@@ -33,7 +33,6 @@ public class PatientRepository {
 
     public void update(PatientEntity patient) {
         delete(patient.getId());
-
         patients.add(patient);
     }
 }

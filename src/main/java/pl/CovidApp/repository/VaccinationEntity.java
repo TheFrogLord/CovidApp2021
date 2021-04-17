@@ -1,4 +1,4 @@
-package pl.sda.covidvavapp.repository;
+package pl.CovidApp.repository;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

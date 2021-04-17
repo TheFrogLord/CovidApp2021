@@ -1,14 +1,14 @@
-package pl.sda.covidvavapp.service;
+package pl.CovidApp.service;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import pl.sda.covidvavapp.api.model.NewPatient;
-import pl.sda.covidvavapp.api.model.Patient;
-import pl.sda.covidvavapp.api.model.UpdatePatient;
-import pl.sda.covidvavapp.api.model.Vaccination;
-import pl.sda.covidvavapp.repository.PatientEntity;
-import pl.sda.covidvavapp.repository.PatientRepository;
-import pl.sda.covidvavapp.repository.VaccinationEntity;
+import pl.CovidApp.api.model.NewPatient;
+import pl.CovidApp.api.model.Patient;
+import pl.CovidApp.api.model.UpdatePatient;
+import pl.CovidApp.api.model.Vaccination;
+import pl.CovidApp.repository.PatientEntity;
+import pl.CovidApp.repository.PatientRepository;
+import pl.CovidApp.repository.VaccinationEntity;
 
 import java.util.HashSet;
 import java.util.List;

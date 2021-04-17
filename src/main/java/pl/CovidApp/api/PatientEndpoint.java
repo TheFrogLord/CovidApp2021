@@ -1,12 +1,12 @@
-package pl.sda.covidvavapp.api;
+package pl.CovidApp.api;
 
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import pl.sda.covidvavapp.api.model.NewPatient;
-import pl.sda.covidvavapp.api.model.Patient;
-import pl.sda.covidvavapp.api.model.UpdatePatient;
-import pl.sda.covidvavapp.service.PatientService;
+import pl.CovidApp.api.model.NewPatient;
+import pl.CovidApp.api.model.Patient;
+import pl.CovidApp.api.model.UpdatePatient;
+import pl.CovidApp.service.PatientService;
 
 import java.util.List;
 

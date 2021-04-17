@@ -1,4 +1,4 @@
-package pl.sda.covidvavapp.api.model;
+package pl.CovidApp.api.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
