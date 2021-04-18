@@ -15,7 +15,7 @@ import java.time.LocalDate;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@BirthDateAndPesel
+@BirthDateAndPesel //daje walidacje w tym miejscu bo tyczy sie porównania daty urodzenia z peselem
 public class NewPatient {
 
     @NotNull(message = "First name must not be null")
