@@ -1,5 +1,7 @@
 package pl.CovidApp.service;
 
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 import pl.CovidApp.api.model.Facility;
 import pl.CovidApp.api.model.FacilitySearchParams;
 import pl.CovidApp.repository.FacilityEntity;
@@ -8,6 +10,8 @@ import pl.CovidApp.repository.FacilityRepository;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
+@AllArgsConstructor
 public class FacilityService {
 
     private FacilityRepository facilityRepository;
@@ -67,5 +71,9 @@ public class FacilityService {
                 .street(facility.getStreet())
                 .name(facility.getName())
                 .build();
+    }
+
+    public void setFacilityRepository(FacilityRepository facilityRepository) {
+        this.facilityRepository = facilityRepository;
     }
 }
