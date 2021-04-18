@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import pl.CovidApp.api.model.*;
 import pl.CovidApp.service.FacilityService;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -17,12 +18,13 @@ public class FacilityEndpoint {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void create(@RequestBody Facility facility) {
+    //@valid sprawdza czy spełnione są warunki, które określiłem w FacilityEntity
+    public void create(@Valid @RequestBody Facility facility) {
         facilityService.create(facility);
     }
 
     @PutMapping
-    public void update(@RequestBody Facility facility) {
+    public void update(@Valid @RequestBody Facility facility) {
         facilityService.update(facility);
     }
 
