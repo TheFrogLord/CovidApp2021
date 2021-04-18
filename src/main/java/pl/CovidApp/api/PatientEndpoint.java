@@ -14,9 +14,6 @@ import pl.CovidApp.service.PatientService;
 
 import javax.validation.Valid;
 import java.util.List;
-
-import javax.validation.Valid;
-import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController

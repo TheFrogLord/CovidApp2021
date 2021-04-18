@@ -5,7 +5,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import pl.CovidApp.api.model.*;
 import pl.CovidApp.service.FacilityService;
-import pl.CovidApp.service.PatientService;
 
 import java.util.List;
 
@@ -14,7 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 public class FacilityEndpoint {
 
-    private FacilityService facilityService;
+    private final FacilityService facilityService;
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
