@@ -1,19 +1,17 @@
-package sda.covidapp.api.model;
-
+package pl.CovidApp.api.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
-
-    private String firstName;
-    private String lastName;
+@Getter
+@Setter
+public class FacilitySearchParams {
+    private String street;
+    private String zipCode;
     private String city;
 
 }
